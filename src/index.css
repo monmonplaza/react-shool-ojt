@@ -22,7 +22,7 @@
 
 @layer base {
   body {
-    @apply bg-primary text-content 
+    @apply bg-primary text-content text-sm leading-6
   }
 
   a {
@@ -57,10 +57,24 @@
   }
 
   p {
-    @apply mb-2 text-content
+    @apply mb-2 text-content opacity-60
   }
 
 
+  table {
+    @apply w-full text-xs
+  }
+
+  table th {
+    @apply !font-bold !py-4
+  }
+  table th, td {
+    @apply text-left p-2
+  }
+
+  table tbody tr:nth-child(odd) {
+    @apply bg-secondary bg-opacity-30
+  }
 }
 
 
@@ -83,5 +97,36 @@
 
   .nav-link.active a {
     @apply text-accent
+  }
+
+  .btn {
+    @apply px-2 py-1 rounded-md text-sm transition-all
+  }
+
+  .btn--accent {
+    @apply bg-accent text-white 
+  }
+
+
+  .tab-link {
+    @apply px-3 py-5
+  }
+
+  .tab-link.active {
+    @apply border-b border-accent
+  }
+
+  .tab-link.active a{
+    @apply text-accent
+  }
+
+  
+
+  .table-action ul {
+    @apply flex gap-4 
+  }
+
+  .table-action ul button {
+    @apply text-base
   }
 }
