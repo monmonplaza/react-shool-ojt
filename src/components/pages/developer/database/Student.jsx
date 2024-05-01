@@ -67,8 +67,13 @@ const Student = () => {
 
                 <tbody>
                   <tr>
+                    <td colSpan={8} className="text-center">
+                      No Data
+                    </td>
+                  </tr>
+                  <tr>
                     <td className="w-[150px]">
-                      <button className="bg-transparent text-accent">
+                      <button className="bg-transparent text-accent underline">
                         Loverboy DeMesa
                       </button>
                     </td>
@@ -108,7 +113,7 @@ const Student = () => {
             </div>
           </div>
 
-          <div className="information w-1/4 overflow-hidden p-10 bg-secondary min-h-[calc(100vh-65px)]">
+          <div className="information w-1/4 overflow-hidden p-10 border-l border-line min-h-[calc(100vh-65px)]">
             <div className="text-center mb-8">
               <img
                 src="https://via.placeholder.com/100x100"
@@ -132,7 +137,7 @@ const Student = () => {
               </ul>
             </div>
             <h5 className="mb-3">About</h5>
-            <p>
+            <p className="text-xs">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
               impedit consequatur dicta unde voluptatum exercitationem beatae
               mollitia provident iste quidem.
@@ -143,7 +148,7 @@ const Student = () => {
                 <li>
                   <h5 className="mb-3">Age</h5>
                 </li>
-                <li>
+                <li className="text-xs">
                   <p>17</p>
                 </li>
               </ul>
@@ -152,7 +157,7 @@ const Student = () => {
                 <li>
                   <h5 className="mb-3">Gender</h5>
                 </li>
-                <li>
+                <li className="text-xs">
                   <p>Male</p>
                 </li>
               </ul>
@@ -161,7 +166,7 @@ const Student = () => {
                 <li>
                   <h5 className="mb-3">Birthday</h5>
                 </li>
-                <li>
+                <li className="text-xs">
                   <p>2 January 2003</p>
                 </li>
               </ul>
@@ -170,7 +175,7 @@ const Student = () => {
                 <li>
                   <h5 className="mb-3">Address</h5>
                 </li>
-                <li>
+                <li className="text-xs">
                   <p>Lorem ipsum dolor sit amet consectetur</p>
                 </li>
               </ul>

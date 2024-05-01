@@ -22,7 +22,7 @@
 
 @layer base {
   body {
-    @apply bg-primary text-content text-sm leading-6
+    @apply bg-primary text-content text-sm
   }
 
   a {
@@ -57,7 +57,7 @@
   }
 
   p {
-    @apply mb-2 text-content opacity-60
+    @apply mb-2 text-content opacity-60 
   }
 
 
